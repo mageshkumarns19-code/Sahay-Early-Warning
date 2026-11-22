@@ -47,7 +47,8 @@ sahay-early-warning/
 ## Option 1 – Reproduce the figures from the saved results (CPU, about 15 minutes)
 
 ```bash
-git clone https://github.com/<your-username>/sahay-early-warning.git
+git clone https://github.com/mageshkumarns19-code/Sahay-Early-Warning.git
+cd Sahay-Early-Warning
 cd sahay-early-warning
 pip install -r requirements.txt
 

@@ -1,0 +1,3 @@
+model,features,AUROC,AUPRC,Recall_at_budget,Precision_at_budget
+XGBoost,PSY,0.9309,0.2886,0.7737,0.2205
+XGBoost,PSY+LEGAL,0.954,0.4925,0.8386,0.2391

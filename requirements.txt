@@ -1,0 +1,14 @@
+# Core (figures and Model C)
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+xgboost>=2.0
+torch>=2.1
+shap>=0.44
+matplotlib>=3.7
+# Model A (text)
+transformers>=4.40
+# Model B (voice)
+librosa>=0.10
+opensmile>=2.5
+huggingface_hub>=0.20

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "Legal-process-aware early warning of psychological distress in victims of atrocity crimes: code and results"
+authors:
+  - family-names: Nagappan
+    given-names: Mageshkumar
+license: MIT
+date-released: 2026-11-15
+preferred-citation:
+  type: article
+  title: "Legal-Process-Aware Early Warning of Psychological Distress in Victims of Atrocity Crimes: A Proof-of-Concept Multilingual Artificial Intelligence Framework"
+  authors:
+    - family-names: Nagappan
+      given-names: Mageshkumar
+  journal: "International Journal of Law and Psychiatry"
+  status: submitted

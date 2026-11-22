@@ -1,0 +1,192 @@
+{
+ "config": {
+  "ENCODER": "facebook/wav2vec2-xls-r-300m",
+  "LAYERS": [
+   6,
+   15
+  ],
+  "SR": 16000,
+  "CHUNK_SEC": 8.0,
+  "MAX_CHUNKS": 12,
+  "SEEDS": [
+   42,
+   7,
+   2026
+  ],
+  "N_FOLDS": 5,
+  "EPOCHS": 150,
+  "LR": 0.001,
+  "WEIGHT_DECAY": 0.001,
+  "HIDDEN": 256,
+  "DROPOUT": 0.3,
+  "BATCH": 64
+ },
+ "n_androids_files": 986,
+ "n_androids_speakers": 118,
+ "n_emota": 936,
+ "integration": {
+  "sensitivity": 0.823,
+  "specificity": 0.889,
+  "source": "Model B multi-task depression head, Androids Corpus, speaker level, mean over seeds",
+  "negative_emotion_sensitivity": 0.773,
+  "negative_emotion_specificity": 0.429
+ },
+ "results": [
+  {
+   "Task": "depression",
+   "Scope": "all tasks",
+   "Model": "XLS-R Multi-task",
+   "macro_F1": "0.853 \u00b1 0.021",
+   "accuracy": "0.853 \u00b1 0.021",
+   "AUROC": "0.943 \u00b1 0.003",
+   "sensitivity": "0.823 \u00b1 0.039",
+   "specificity": "0.889 \u00b1 0.000",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "all tasks",
+   "Model": "XLS-R Single-task",
+   "macro_F1": "0.844 \u00b1 0.005",
+   "accuracy": "0.845 \u00b1 0.005",
+   "AUROC": "0.944 \u00b1 0.002",
+   "sensitivity": "0.812 \u00b1 0.000",
+   "specificity": "0.883 \u00b1 0.011",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "all tasks",
+   "Model": "eGeMAPS + LR",
+   "macro_F1": "0.813 \u00b1 0.000",
+   "accuracy": "0.814 \u00b1 0.000",
+   "AUROC": "0.906 \u00b1 0.000",
+   "sensitivity": "0.812 \u00b1 0.000",
+   "specificity": "0.815 \u00b1 0.000",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "interview",
+   "Model": "XLS-R Multi-task",
+   "macro_F1": "0.842 \u00b1 0.021",
+   "accuracy": "0.842 \u00b1 0.022",
+   "AUROC": "0.942 \u00b1 0.002",
+   "sensitivity": "0.807 \u00b1 0.039",
+   "specificity": "0.885 \u00b1 0.000",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "interview",
+   "Model": "XLS-R Single-task",
+   "macro_F1": "0.836 \u00b1 0.000",
+   "accuracy": "0.836 \u00b1 0.000",
+   "AUROC": "0.943 \u00b1 0.003",
+   "sensitivity": "0.797 \u00b1 0.000",
+   "specificity": "0.885 \u00b1 0.000",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "interview",
+   "Model": "eGeMAPS + LR",
+   "macro_F1": "0.826 \u00b1 0.000",
+   "accuracy": "0.828 \u00b1 0.000",
+   "AUROC": "0.897 \u00b1 0.000",
+   "sensitivity": "0.844 \u00b1 0.000",
+   "specificity": "0.808 \u00b1 0.000",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "reading",
+   "Model": "XLS-R Multi-task",
+   "macro_F1": "0.845 \u00b1 0.014",
+   "accuracy": "0.845 \u00b1 0.014",
+   "AUROC": "0.930 \u00b1 0.007",
+   "sensitivity": "0.822 \u00b1 0.020",
+   "specificity": "0.870 \u00b1 0.019",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "reading",
+   "Model": "XLS-R Single-task",
+   "macro_F1": "0.833 \u00b1 0.010",
+   "accuracy": "0.833 \u00b1 0.010",
+   "AUROC": "0.926 \u00b1 0.005",
+   "sensitivity": "0.816 \u00b1 0.020",
+   "specificity": "0.852 \u00b1 0.000",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "depression",
+   "Scope": "reading",
+   "Model": "eGeMAPS + LR",
+   "macro_F1": "0.830 \u00b1 0.000",
+   "accuracy": "0.830 \u00b1 0.000",
+   "AUROC": "0.897 \u00b1 0.000",
+   "sensitivity": "0.845 \u00b1 0.000",
+   "specificity": "0.815 \u00b1 0.000",
+   "UAR": NaN,
+   "negative_sensitivity": NaN,
+   "negative_specificity": NaN
+  },
+  {
+   "Task": "emotion",
+   "Scope": "EmoTa",
+   "Model": "XLS-R Multi-task",
+   "macro_F1": "0.497 \u00b1 0.008",
+   "accuracy": "0.495 \u00b1 0.007",
+   "AUROC": NaN,
+   "sensitivity": NaN,
+   "specificity": NaN,
+   "UAR": "0.497 \u00b1 0.007",
+   "negative_sensitivity": "0.773 \u00b1 0.040",
+   "negative_specificity": "0.429 \u00b1 0.035"
+  },
+  {
+   "Task": "emotion",
+   "Scope": "EmoTa",
+   "Model": "XLS-R Single-task",
+   "macro_F1": "0.506 \u00b1 0.005",
+   "accuracy": "0.505 \u00b1 0.005",
+   "AUROC": NaN,
+   "sensitivity": NaN,
+   "specificity": NaN,
+   "UAR": "0.509 \u00b1 0.005",
+   "negative_sensitivity": "0.792 \u00b1 0.011",
+   "negative_specificity": "0.457 \u00b1 0.040"
+  },
+  {
+   "Task": "emotion",
+   "Scope": "EmoTa",
+   "Model": "eGeMAPS + LR",
+   "macro_F1": "0.345 \u00b1 0.000",
+   "accuracy": "0.338 \u00b1 0.000",
+   "AUROC": NaN,
+   "sensitivity": NaN,
+   "specificity": NaN,
+   "UAR": "0.353 \u00b1 0.000",
+   "negative_sensitivity": "0.712 \u00b1 0.000",
+   "negative_specificity": "0.388 \u00b1 0.000"
+  }
+ ]
+}

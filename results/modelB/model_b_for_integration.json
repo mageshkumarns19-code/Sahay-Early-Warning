@@ -1,0 +1,7 @@
+{
+ "sensitivity": 0.823,
+ "specificity": 0.889,
+ "source": "Model B multi-task depression head, Androids Corpus, speaker level, mean over seeds",
+ "negative_emotion_sensitivity": 0.773,
+ "negative_emotion_specificity": 0.429
+}

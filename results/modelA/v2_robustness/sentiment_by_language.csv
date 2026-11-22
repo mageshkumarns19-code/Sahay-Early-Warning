@@ -1,0 +1,3 @@
+language,n,accuracy,macro_F1,weighted_F1
+Tamil,4402,0.6174,0.4985,0.6182
+Malayalam,1962,0.7044,0.6236,0.7006

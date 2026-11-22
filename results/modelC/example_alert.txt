@@ -1,0 +1,6 @@
+Escalation risk in next 14 days: 92%
+Main reasons:
+  - negative emotion (4 wks) (value 0.9, +1.90 log-odds)
+  - weeks until next hearing (value 1.0, +1.17 log-odds)
+  - average screening score (4 wks) (value 9.0, +0.73 log-odds)
+  - rise in screening score (4 wks) (value -4.0, +0.59 log-odds)

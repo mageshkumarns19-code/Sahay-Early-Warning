@@ -1,0 +1,10 @@
+scenario,delta_AUROC,AUROC_ci_low,AUROC_ci_high,AUROC_p,delta_AUPRC,AUPRC_ci_low,AUPRC_ci_high,AUPRC_p
+Oracle text (simulator),0.0361,0.031,0.0415,0.0,0.1745,0.151,0.196,0.0
+Perfect tone classifier,0.0406,0.0346,0.0467,0.0,0.1608,0.1378,0.1809,0.0
+Model A text (realistic),0.0421,0.0362,0.0483,0.0,0.1484,0.1268,0.1685,0.0
+"Model A text, no voice",0.0431,0.0369,0.0496,0.0,0.1465,0.1258,0.167,0.0
+"No text, simulated voice",0.0426,0.0364,0.049,0.0,0.1466,0.1255,0.1663,0.0
+Model A text + Model B voice,0.0392,0.0332,0.0454,0.0,0.154,0.1322,0.1748,0.0
+No screening: oracle text,0.0382,0.0325,0.0439,0.0,0.1672,0.1454,0.1878,0.0
+No screening: Model A text,0.0717,0.061,0.0828,0.0,0.0703,0.0569,0.0848,0.0
+"No screening, no text",0.0983,0.0826,0.1126,0.0,0.0637,0.0512,0.0769,0.0

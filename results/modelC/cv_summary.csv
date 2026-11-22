@@ -1,0 +1,8 @@
+,,AUROC,AUROC,AUPRC,AUPRC,Recall_at_budget,Recall_at_budget,Precision_at_budget,Precision_at_budget
+,,mean,std,mean,std,mean,std,mean,std
+model,features,,,,,,,,
+DDS (rule-based),PSY+LEGAL,0.872,0.005,0.1957,0.0103,0.5184,0.0123,0.185,0.005
+Logistic Regression,PSY,0.8926,0.0034,0.2208,0.0079,0.6,0.0153,0.2141,0.0063
+Logistic Regression,PSY+LEGAL,0.9175,0.0023,0.3501,0.0123,0.6822,0.0077,0.2434,0.0053
+XGBoost,PSY,0.8965,0.0041,0.2314,0.0089,0.6068,0.0114,0.2165,0.0049
+XGBoost,PSY+LEGAL,0.9302,0.0025,0.4231,0.0133,0.7214,0.009,0.2574,0.0052

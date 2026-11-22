@@ -1,0 +1,7 @@
+Task,Model,accuracy,macro_F1,weighted_F1
+cause,MuRIL Multi-task,0.544 ± 0.021,0.524 ± 0.020,0.542 ± 0.022
+cause,MuRIL Single-task,0.528 ± 0.118,0.420 ± 0.166,0.476 ± 0.155
+cause,TF-IDF + LR,0.497 ± 0.000,0.470 ± 0.000,0.495 ± 0.000
+sentiment,MuRIL Multi-task,0.640 ± 0.004,0.547 ± 0.005,0.639 ± 0.004
+sentiment,MuRIL Single-task,0.637 ± 0.005,0.543 ± 0.005,0.638 ± 0.005
+sentiment,TF-IDF + LR,0.596 ± 0.000,0.534 ± 0.000,0.609 ± 0.000

@@ -1,0 +1,10 @@
+scenario,positive_rate,AUPRC_PSY,AUPRC_PSY+LEGAL,legal_gain_AUPRC
+Base (as above),0.0352,0.2221,0.4011,0.179
+Hearing gap ~6 weeks,0.0432,0.2409,0.3863,0.1454
+Hearing gap ~16 weeks,0.03,0.2184,0.3881,0.1696
+"Relief mostly on time (70%, 4-wk delay)",0.033,0.2173,0.3962,0.1788
+"Relief mostly late (10%, 24-wk delay)",0.039,0.2266,0.4035,0.1769
+More chronic distress (45/20/25/10),0.0611,0.2778,0.4884,0.2106
+Bail rarely granted (30%),0.0342,0.2218,0.406,0.1842
+Legal-event effects halved,0.0221,0.2256,0.3016,0.076
+Legal-event effects doubled,0.0869,0.2231,0.5846,0.3615

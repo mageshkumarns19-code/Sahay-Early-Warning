@@ -1,0 +1,19 @@
+scenario,features,episodes,detected_pct,median_lead_weeks
+Oracle text (simulator),PSY,1454,76.75,3.0
+Oracle text (simulator),PSY+LEGAL,1454,84.53,3.0
+Perfect tone classifier,PSY,1454,72.83,3.0
+Perfect tone classifier,PSY+LEGAL,1454,80.67,3.0
+Model A text (realistic),PSY,1454,70.08,3.0
+Model A text (realistic),PSY+LEGAL,1454,79.23,3.0
+"Model A text, no voice",PSY,1454,69.81,3.0
+"Model A text, no voice",PSY+LEGAL,1454,78.06,3.0
+"No text, simulated voice",PSY,1454,70.36,3.0
+"No text, simulated voice",PSY+LEGAL,1454,77.65,3.0
+Model A text + Model B voice,PSY,1454,73.31,3.0
+Model A text + Model B voice,PSY+LEGAL,1454,81.71,3.0
+No screening: oracle text,PSY,1454,75.24,3.0
+No screening: oracle text,PSY+LEGAL,1454,83.36,3.0
+No screening: Model A text,PSY,1454,51.44,3.0
+No screening: Model A text,PSY+LEGAL,1454,62.72,3.0
+"No screening, no text",PSY,1454,40.92,3.0
+"No screening, no text",PSY+LEGAL,1454,58.05,2.0

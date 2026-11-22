@@ -1,0 +1,12 @@
+task,label,precision,recall,f1-score,support
+sentiment,Positive,0.7732,0.7723,0.7727,3258.0
+sentiment,Negative,0.5012,0.4844,0.4927,832.0
+sentiment,Mixed_feelings,0.3513,0.2746,0.3082,641.0
+sentiment,unknown_state,0.5611,0.6301,0.5936,1276.0
+sentiment,not_native,0.578,0.6022,0.5898,357.0
+cause,no_reason,0.6562,0.3443,0.4516,61.0
+cause,bias_or_abuse,0.2449,0.3429,0.2857,35.0
+cause,jobs_career,0.7073,0.6042,0.6517,48.0
+cause,medication,0.5,0.3256,0.3944,43.0
+cause,relationship,0.5577,0.6374,0.5949,91.0
+cause,alienation,0.4569,0.5761,0.5096,92.0

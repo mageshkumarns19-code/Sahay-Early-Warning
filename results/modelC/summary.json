@@ -1,0 +1,303 @@
+{
+ "config": {
+  "N_VICTIMS": 6000,
+  "N_WEEKS": 104,
+  "HORIZON": 2,
+  "HIGH": 70,
+  "SEQ_LEN": 12,
+  "SEEDS": [
+   42,
+   7,
+   2026
+  ],
+  "N_FOLDS": 5,
+  "TEST_FRAC": 0.15,
+  "VAL_FRAC": 0.15,
+  "ALERT_BUDGET": 0.1,
+  "TEMPORAL_CUT": 78,
+  "N_BOOT": 1000,
+  "XGB": {
+   "n_estimators": 500,
+   "learning_rate": 0.05,
+   "max_depth": 6,
+   "subsample": 0.8,
+   "colsample_bytree": 0.8,
+   "early_stopping_rounds": 50
+  },
+  "DL_EPOCHS": 50,
+  "DL_BATCH": 512,
+  "DL_LR": 0.001,
+  "DL_PATIENCE": 8,
+  "DL_HIDDEN": 64
+ },
+ "n_eligible_rows": 554650,
+ "positive_rate": 0.03518615343009105,
+ "legal_shap_share": 0.29565608501434326,
+ "test": [
+  {
+   "Model": "Attention-LSTM",
+   "Features": "PSY",
+   "AUROC": "0.907 \u00b1 0.000",
+   "AUPRC": "0.244 \u00b1 0.002",
+   "Recall_at_budget": "0.639 \u00b1 0.002",
+   "Precision_at_budget": "0.207 \u00b1 0.001"
+  },
+  {
+   "Model": "Attention-LSTM",
+   "Features": "PSY+LEGAL",
+   "AUROC": "0.935 \u00b1 0.000",
+   "AUPRC": "0.403 \u00b1 0.005",
+   "Recall_at_budget": "0.744 \u00b1 0.007",
+   "Precision_at_budget": "0.241 \u00b1 0.002"
+  },
+  {
+   "Model": "DDS (rule-based)",
+   "Features": "PSY+LEGAL",
+   "AUROC": "0.880 \u00b1 0.000",
+   "AUPRC": "0.180 \u00b1 0.000",
+   "Recall_at_budget": "0.539 \u00b1 0.000",
+   "Precision_at_budget": "0.174 \u00b1 0.000"
+  },
+  {
+   "Model": "Logistic Regression",
+   "Features": "PSY",
+   "AUROC": "0.893 \u00b1 0.000",
+   "AUPRC": "0.206 \u00b1 0.000",
+   "Recall_at_budget": "0.594 \u00b1 0.000",
+   "Precision_at_budget": "0.192 \u00b1 0.000"
+  },
+  {
+   "Model": "Logistic Regression",
+   "Features": "PSY+LEGAL",
+   "AUROC": "0.922 \u00b1 0.000",
+   "AUPRC": "0.333 \u00b1 0.000",
+   "Recall_at_budget": "0.695 \u00b1 0.000",
+   "Precision_at_budget": "0.225 \u00b1 0.000"
+  },
+  {
+   "Model": "XGBoost",
+   "Features": "PSY",
+   "AUROC": "0.897 \u00b1 0.000",
+   "AUPRC": "0.221 \u00b1 0.001",
+   "Recall_at_budget": "0.609 \u00b1 0.003",
+   "Precision_at_budget": "0.197 \u00b1 0.001"
+  },
+  {
+   "Model": "XGBoost",
+   "Features": "PSY+LEGAL",
+   "AUROC": "0.934 \u00b1 0.000",
+   "AUPRC": "0.402 \u00b1 0.001",
+   "Recall_at_budget": "0.733 \u00b1 0.001",
+   "Precision_at_budget": "0.237 \u00b1 0.000"
+  }
+ ],
+ "ablation": [
+  {
+   "index": "AUROC",
+   "model": "Logistic Regression",
+   "delta": 0.0286,
+   "ci_low": 0.0241,
+   "ci_high": 0.033,
+   "p_value": 0.0
+  },
+  {
+   "index": "AUPRC",
+   "model": "Logistic Regression",
+   "delta": 0.1272,
+   "ci_low": 0.1104,
+   "ci_high": 0.1449,
+   "p_value": 0.0
+  },
+  {
+   "index": "AUROC",
+   "model": "XGBoost",
+   "delta": 0.0365,
+   "ci_low": 0.0315,
+   "ci_high": 0.0418,
+   "p_value": 0.0
+  },
+  {
+   "index": "AUPRC",
+   "model": "XGBoost",
+   "delta": 0.1789,
+   "ci_low": 0.1559,
+   "ci_high": 0.2011,
+   "p_value": 0.0
+  },
+  {
+   "index": "AUROC",
+   "model": "Attention-LSTM",
+   "delta": 0.0282,
+   "ci_low": 0.0234,
+   "ci_high": 0.0334,
+   "p_value": 0.0
+  },
+  {
+   "index": "AUPRC",
+   "model": "Attention-LSTM",
+   "delta": 0.1625,
+   "ci_low": 0.1366,
+   "ci_high": 0.1885,
+   "p_value": 0.0
+  }
+ ],
+ "temporal": [
+  {
+   "model": "XGBoost",
+   "features": "PSY",
+   "AUROC": 0.9309,
+   "AUPRC": 0.2886,
+   "Recall_at_budget": 0.7737,
+   "Precision_at_budget": 0.2205
+  },
+  {
+   "model": "XGBoost",
+   "features": "PSY+LEGAL",
+   "AUROC": 0.954,
+   "AUPRC": 0.4925,
+   "Recall_at_budget": 0.8386,
+   "Precision_at_budget": 0.2391
+  }
+ ],
+ "lead_time": [
+  {
+   "model": "DDS (rule-based)",
+   "features": "PSY+LEGAL",
+   "episodes": 1454,
+   "detected_pct": 76.96,
+   "mean_lead_weeks": 2.55,
+   "median_lead_weeks": 2.0
+  },
+  {
+   "model": "Logistic Regression",
+   "features": "PSY",
+   "episodes": 1454,
+   "detected_pct": 77.58,
+   "mean_lead_weeks": 2.85,
+   "median_lead_weeks": 3.0
+  },
+  {
+   "model": "XGBoost",
+   "features": "PSY",
+   "episodes": 1454,
+   "detected_pct": 76.48,
+   "mean_lead_weeks": 2.88,
+   "median_lead_weeks": 3.0
+  },
+  {
+   "model": "Attention-LSTM",
+   "features": "PSY",
+   "episodes": 1454,
+   "detected_pct": 74.62,
+   "mean_lead_weeks": 2.98,
+   "median_lead_weeks": 4.0
+  },
+  {
+   "model": "Logistic Regression",
+   "features": "PSY+LEGAL",
+   "episodes": 1454,
+   "detected_pct": 84.87,
+   "mean_lead_weeks": 2.74,
+   "median_lead_weeks": 3.0
+  },
+  {
+   "model": "XGBoost",
+   "features": "PSY+LEGAL",
+   "episodes": 1454,
+   "detected_pct": 84.39,
+   "mean_lead_weeks": 2.8,
+   "median_lead_weeks": 3.0
+  },
+  {
+   "model": "Attention-LSTM",
+   "features": "PSY+LEGAL",
+   "episodes": 1454,
+   "detected_pct": 83.98,
+   "mean_lead_weeks": 2.9,
+   "median_lead_weeks": 3.0
+  }
+ ],
+ "negative_control": [
+  {
+   "index": "AUROC",
+   "experiment": "negative control (no legal effects)",
+   "delta": 0.0001,
+   "ci_low": -0.0006,
+   "ci_high": 0.0008,
+   "p_value": 0.852
+  },
+  {
+   "index": "AUPRC",
+   "experiment": "negative control (no legal effects)",
+   "delta": -0.0004,
+   "ci_low": -0.0081,
+   "ci_high": 0.0075,
+   "p_value": 0.89
+  }
+ ],
+ "sensitivity": [
+  {
+   "scenario": "Base (as above)",
+   "positive_rate": 0.0352,
+   "AUPRC_PSY": 0.2221,
+   "AUPRC_PSY+LEGAL": 0.4011,
+   "legal_gain_AUPRC": 0.179
+  },
+  {
+   "scenario": "Hearing gap ~6 weeks",
+   "positive_rate": 0.0432,
+   "AUPRC_PSY": 0.2409,
+   "AUPRC_PSY+LEGAL": 0.3863,
+   "legal_gain_AUPRC": 0.1454
+  },
+  {
+   "scenario": "Hearing gap ~16 weeks",
+   "positive_rate": 0.03,
+   "AUPRC_PSY": 0.2184,
+   "AUPRC_PSY+LEGAL": 0.3881,
+   "legal_gain_AUPRC": 0.1696
+  },
+  {
+   "scenario": "Relief mostly on time (70%, 4-wk delay)",
+   "positive_rate": 0.033,
+   "AUPRC_PSY": 0.2173,
+   "AUPRC_PSY+LEGAL": 0.3962,
+   "legal_gain_AUPRC": 0.1788
+  },
+  {
+   "scenario": "Relief mostly late (10%, 24-wk delay)",
+   "positive_rate": 0.039,
+   "AUPRC_PSY": 0.2266,
+   "AUPRC_PSY+LEGAL": 0.4035,
+   "legal_gain_AUPRC": 0.1769
+  },
+  {
+   "scenario": "More chronic distress (45/20/25/10)",
+   "positive_rate": 0.0611,
+   "AUPRC_PSY": 0.2778,
+   "AUPRC_PSY+LEGAL": 0.4884,
+   "legal_gain_AUPRC": 0.2106
+  },
+  {
+   "scenario": "Bail rarely granted (30%)",
+   "positive_rate": 0.0342,
+   "AUPRC_PSY": 0.2218,
+   "AUPRC_PSY+LEGAL": 0.406,
+   "legal_gain_AUPRC": 0.1842
+  },
+  {
+   "scenario": "Legal-event effects halved",
+   "positive_rate": 0.0221,
+   "AUPRC_PSY": 0.2256,
+   "AUPRC_PSY+LEGAL": 0.3016,
+   "legal_gain_AUPRC": 0.076
+  },
+  {
+   "scenario": "Legal-event effects doubled",
+   "positive_rate": 0.0869,
+   "AUPRC_PSY": 0.2231,
+   "AUPRC_PSY+LEGAL": 0.5846,
+   "legal_gain_AUPRC": 0.3615
+  }
+ ]
+}

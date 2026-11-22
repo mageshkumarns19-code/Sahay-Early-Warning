@@ -1,0 +1,8 @@
+model,features,episodes,detected_pct,mean_lead_weeks,median_lead_weeks
+DDS (rule-based),PSY+LEGAL,1454,76.96,2.55,2.0
+Logistic Regression,PSY,1454,77.58,2.85,3.0
+XGBoost,PSY,1454,76.48,2.88,3.0
+Attention-LSTM,PSY,1454,74.62,2.98,4.0
+Logistic Regression,PSY+LEGAL,1454,84.87,2.74,3.0
+XGBoost,PSY+LEGAL,1454,84.39,2.8,3.0
+Attention-LSTM,PSY+LEGAL,1454,83.98,2.9,3.0
